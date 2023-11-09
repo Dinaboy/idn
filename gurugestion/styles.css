@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2', cursive;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #efefef;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #fd9309;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95px;
+    padding: 10px 10%;
+    font-size: 150%;
+    width: 100%;
+}
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img{
+    height: 80px;
+    width: auto;
+    transition: all 0.3s;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.header .logo img:hover{
+    transform: scale(1.1);
+}
+.logo h1 {
+    color: #efefef;
+    margin-left: 20px;
+}
+
+.header .nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header .nav-links a img {
+    max-width: 60px; 
+    height: auto;
+    transition: all 0.3s;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.info{
+    font-size: 50px;
+    height: 30%; 
+    padding-top: 20px; 
+    padding-bottom: 250px; 
+}
+
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #000000;
+    padding: 9px 25px;
+    background: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 100%;
+}
+
+.header .btn button:hover{
+    background-color: #fdfdfd;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 1200px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: flex-start; 
+        text-align: center; 
+        background-color:#fd9309 ;
+        padding: 10px;
+    }
+    .header .logo {
+        margin-bottom: 20px;
+        margin-left: auto; 
+    }
+    
+    .header .nav-links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-left: auto; 
+    }
+    .header .nav-links li {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        margin-bottom: 10px;
+        
+    }
+    .header .btn button {
+        margin-left: auto; 
+    }
+}
+
+
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgb(250, 225, 177);
+    border-radius: 50px;
+    overflow: hidden;
+    transition: .5s;
+    margin: 10px 40px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(173, 84, 1, 0.986);
+    transform: translateY(-15px);
+}
+
+.card .head {
+    height: 125px;
+    width: 100%;
+    position: relative;
+}
+
+.card .head .circle {
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    border-radius: 20%;
+    background: #ff9900d3;
+    bottom: 5PX;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+}
+
+.card .head .img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card .head .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.card .description {
+    height: 200px;
+    padding: 40px 20px 20px 20px;
+    border-bottom: solid 1px rgba(6, 74, 76, .18);
+    text-align: center;
+}
+
+.card .description h3 {
+    color: #030e11;
+    font-size: 200%;
+}
+
+
+.card .description p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+
+.card .contact {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .contact a {
+    text-decoration: none;
+    color: #fff;
+    background: #ff9900d3;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.card .contact a:hover {
+    
+    background: rgb(165, 100, 3);
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px); 
+        margin: 10px;
+        height: 400px; 
+        margin-top: 50px; 
+        margin-bottom: 20px; 
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .card .contact {
+        height: 50px;
+    }
+    .card .head .circle {
+        position: absolute;
+        width: 100%;
+        height: 200%;
+        border-radius: 20%;
+        bottom: 5PX;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        }
+    }
+
+/* boton de wpp */
+.btn-wsp{
+    position:fixed;
+    width:100px;
+    height:100px;
+    line-height: 109px;
+    bottom:25px;
+    right:30px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:60px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:999;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:1200px){
+    .btn-wsp{
+        position:fixed;
+	}
+}
+
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*empieza carrusel de logos */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.slider .slide img {
+    width: 80%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.slider::before,
+.slider::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite; 
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    height: 600px;
+    width: 100%
+}

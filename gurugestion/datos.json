@@ -1,0 +1,18 @@
+{
+"tarjetas": [
+    {
+        "titulo": "Guru Empresas",
+        "descripcion": "Información sobre Guru Empresas."
+    },
+    {
+        "titulo": "Guru colegios",
+        "descripcion": "Información sobre Guru colegios."
+    },
+    {
+        "titulo": "Guru Zend",
+        "descripcion": "Información sobre Guru Zend."
+    }
+]
+
+
+}
